@@ -1,0 +1,25 @@
+{
+  "name": "merujan99/laravel-video-embed",
+  "type": "library",
+  "description": "Laravel Package for dereuromark/MediaEmbed With Thumbnail",
+  "keywords": ["laravel","package development"],
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Meruzhan Hovhannisyan",
+      "email": "merujan99@gmail.com"
+    }
+  ],
+  "autoload":{
+    "psr-4": {
+      "Merujan99\\LaravelVideoEmbed\\": "src/"
+    }
+  },
+  "config": {
+      "preferred-install": "dist"
+  },
+  "require": {
+    "dereuromark/media-embed": "^0.3.0"
+  }
+}
