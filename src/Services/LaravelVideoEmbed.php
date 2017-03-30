@@ -54,7 +54,7 @@ class LaravelVideoEmbed
 
       if($MediaObject)
       {
-          return "https://img.youtube.com/vi/{$MediaObject->id()}/mqdefault.jpg";
+          return "https://img.youtube.com/vi/{$MediaObject->id()}/maxresdefault.jpg";
       }
 
       return false;
