@@ -46,4 +46,18 @@ class LaravelVideoEmbed
 
   }
 
+  public function getYoutubeThumbnail($url = null)
+  {
+      $MediaEmbed = new MediaEmbed();
+
+      $MediaObject = $MediaEmbed->parseUrl($url);
+
+      if($MediaObject)
+      {
+          return "https://img.youtube.com/vi/{$MediaObject->id()}/mqdefault.jpg";
+      }
+
+      return false;
+  }
+
 }
