@@ -68,6 +68,9 @@ return LaravelVideoEmbed::parse($url, ['Vimeo']);
 
 return LaravelVideoEmbed::parse($url, $whitelist, $params, $attributes)
 //<iframe src="https://www.youtube.com/embed/8eK-5ivYb3o?wmode=transparent&amp;autoplay=1&amp;loop=1" type="" width="480" height="295" frameborder="0" allowfullscreen class="iframe-class" data-html5-parameter></iframe>
+
+return LaravelVideoEmbed::getYoutubeThumbnail($url)
+//https://<youtube image thumbnail with max resolution>. usage: <img src="{{ LaravelVideoEmbed::getYoutubeThumbnail($url) }}"> 
 ```
 
 ## Supported Hosts
