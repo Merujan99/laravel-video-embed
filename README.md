@@ -2,39 +2,42 @@
 
 A simple wrapper for dereuromark/MediaEmbed to generate embed HTML for popular media hosting services. + Thumbnail function based on Joe1992w/laravel-media-embed.
 
-##Installation
-````bash
+## Installation
+```bash
 composer require merujan99/laravel-video-embed:dev-master
-````
+```
+
 OR
-````json
+
+```json
 "require": {
     "merujan99/laravel-video-embed": "dev-master",
 },
-````
-````bash
-composer install
-````
+```
 
-##Service Provider
-````php
+```bash
+composer install
+```
+
+## Service Provider
+```php
 'providers' => [
     // Others...
     Merujan99\LaravelVideoEmbed\Providers\LaravelVideoEmbedServiceProvider::class,
 ],
-````
+```
 
-##Facade
-````php
+## Facade
+```php
 'aliases' => [
     // Others...
     'LaravelVideoEmbed' => Merujan99\LaravelVideoEmbed\Facades\LaravelVideoEmbed::class,
 ],
-````
+```
 
-##Usage
+## Usage
 
-````php
+```php
 //URL to be used for embed generation
 $url = "https://www.youtube.com/watch?v=8eK-5ivYb3o";
 
@@ -65,13 +68,13 @@ return LaravelVideoEmbed::parse($url, ['Vimeo']);
 
 return LaravelVideoEmbed::parse($url, $whitelist, $params, $attributes)
 //<iframe src="https://www.youtube.com/embed/8eK-5ivYb3o?wmode=transparent&amp;autoplay=1&amp;loop=1" type="" width="480" height="295" frameborder="0" allowfullscreen class="iframe-class" data-html5-parameter></iframe>
-````
+```
 
-##Supported Hosts
+## Supported Hosts
 
 Please see [dereuromark/MediaEmbed](https://github.com/dereuromark/MediaEmbed)
 
-##Supported Website Whitelist names
+## Supported Website Whitelist names
 Name |
 --- |
 YouTube |
