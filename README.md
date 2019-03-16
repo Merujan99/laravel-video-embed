@@ -34,6 +34,18 @@ composer install
     'LaravelVideoEmbed' => Merujan99\LaravelVideoEmbed\Facades\LaravelVideoEmbed::class,
 ],
 ```
+## Publish configuration settings
+
+After completing the step above, use the following command to publish configuration settings:
+
+```php artisan vendor:publish --provider="Merujan99\LaravelVideoEmbed\Providers\LaravelVideoEmbedServiceProvider" ```
+
+then just add
+
+``` use LaravelVideoEmbed; ```
+
+this in your controller
+
 
 ## Usage
 
