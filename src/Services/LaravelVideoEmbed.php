@@ -20,7 +20,7 @@ class LaravelVideoEmbed
         $MediaObject->setParam($params);
       }
 
-      if(is_array($params))
+      if(is_array($attributes))
       {
         $MediaObject->setAttribute($attributes);
       }
